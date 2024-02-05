@@ -561,6 +561,7 @@ static int verity_verify_io(struct dm_verity_io *io)
 				 */
 				return -EIO;
 			}
+
 #ifdef SEC_HEX_DEBUG
 			if (verity_handle_err_hex_debug(v, DM_VERITY_BLOCK_TYPE_DATA,
 					cur_block, io, &start)) {
